@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLMWP</title>
+<link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/icons/site.webmanifest">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+</head>
+<body>
+
+	<div class="f-box">
+		<h2>IPL MATCH WINNER PREDICTOR</h2>
+      <center>
+        <h3 style="color:white; padding: 10px 0px;">WIN PROBABILITIES</h3>
+
+        <form action="back" method="GET">
+
+	        {% if batteam %}
+                <h3 class="heade" style="color:white">Batting Team - {{batteam}}</h3>  
+	        {%endif%}
+           
+                {% if databat >=0 %}
+                <h3 class="inp" style="color:white">{{databat}} % </h3>
+                {%endif%}
+  
+
+            {% if bowlteam %}
+                <h3 class="heade" style="color:white">Bowling Team - {{bowlteam}}</h3>  
+            {%endif%}
+                {% if databowl >=0 %}
+                    <h3 class="inp" style="color:white" >{{databowl}} % </h3>
+                {%endif%}
+            </center>
+	  
+            <input type="submit" id="btnn" value="Home">
+   
+        </form>
+    </div>
+</body>
+</html>

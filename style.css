@@ -1,0 +1,105 @@
+* {margin: 0; padding: 0;}
+
+  html {
+	height: 100%;
+    overflow: scroll;
+  }
+  
+  body {
+	margin:0;
+	padding:0;
+	font-family: sans-serif;
+	background: url('/static/iplimg.png');
+	background-size: contain;
+  }
+
+  .f-box {
+	position: absolute;
+  margin: 20px 0;
+	top: 50%;
+	left: 50%;
+	width: 400px;
+	padding: 40px;
+	transform: translate(-50%, -50%);
+	background: rgba(0, 3, 51, 0.9);
+	box-sizing: border-box;
+	box-shadow: 0 15px 25px rgba(0,0,0,.6);
+	border-radius: 10px;
+  }
+  
+  .f-box h2 {
+	margin: 0 0 30px;
+	padding: 0;
+	color: #fff;
+	text-align: center;
+  }
+  
+  .f-box .user-box {
+	position: relative;
+  }
+  
+  .f-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid #fff;
+	outline: none;
+	background: transparent;
+  }
+  .f-box .user-box label {
+	position: absolute;
+	top:0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: #fff;
+	pointer-events: none;
+	transition: .5s;
+  }
+  
+  .f-box .user-box input:focus ~ label,
+  .f-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #03e9f4;
+	font-size: 12px;
+  }
+  
+
+#btnn {
+	width: 100px;
+	background: #27AE60;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px;
+	margin: 10px 5px;
+  text-decoration: none;
+  font-size: 14px;
+}
+#btnn:hover, #btnn:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #27AE60;
+
+}
+
+.inp{
+	width: 100%;
+	padding: 10px 0;
+	color: #fff;
+	margin-bottom: 30px;
+	border: 1px solid #fff;
+	outline: none;
+	background: transparent;	
+}
+
+.heade{
+	width: 100%;
+	padding: 15px 0;
+	color: #fff;
+	outline: none;
+}

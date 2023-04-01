@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPLMWP</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="/static/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/static/icons/favicon-16x16.png">
+    <link rel="manifest" href="/static/icons/site.webmanifest">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}">
+    
+</head>
+<body>
+
+  <div class="f-box">
+    
+    <h2>IPL MATCH WINNER PREDICTOR</h2>
+    <form method="POST" action="predict">
+      
+      <div class="user-box">
+        <input type="text" name="bat" required="">
+        <label>Batting Team</label>
+      </div>
+      
+      <div class="user-box">
+        <input type="text" name="bowl" required="">
+        <label>Bowling Team</label>
+      </div>
+      
+      <div class="user-box">
+        <input type="text" name="city" required="">
+        <label>Host City</label>
+      </div>
+      
+      <div class="user-box">
+        <input type="number" name="target" required="">
+        <label>Target</label>
+        </div>
+      
+      <div class="user-box">
+        <input type="number" name="score" required="">
+        <label>Current Score</label>
+      </div>
+      
+      <div class="user-box">
+        <input type="number" name="overs" required="" id="oc" min="0" max="20">
+        <label for="oc">Overs Completed</label>
+        </div>
+      
+      <div class="user-box">
+        <input type="number" id="quantity" name="wickets" min="0" max="10" required="">
+        <label for="quantity">Wickets Out</label>
+      </div>
+      
+      <input type="submit" id="btnn" value="Predict">
+      
+    </form>
+
+  </div>
+</body>
+</html>
